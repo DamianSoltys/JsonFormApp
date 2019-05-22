@@ -1,0 +1,133 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+#button_sub {
+  margin-top: 20px;
+}
+
+.container-fluid {
+  width: 60%;
+  max-width: 750px;
+}
+
+#form_url {
+  margin-top: 20px;
+}
+
+#form_loaded {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 50px;
+}
+
+.form-control {
+  width: 10%;
+}
+
+#url {
+  width: 100%;
+}
+
+.a_download button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.a_download button:hover {
+  cursor: pointer;
+}
+
+.control_group {
+  display: inline-flex;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+.control_group input {
+  width: 50%;
+}
+
+.control_group select {
+  width: 50%;
+  text-align: center;
+}
+
+.control_group label {
+  width: 50%;
+  font-size: 1.2em;
+  color: rgb(14, 36, 63);
+}
+
+.control_group label::after {
+  content: ":";
+}
+
+.control_check {
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.control_check label {
+  display: block;
+  margin: auto;
+  font-size: 1.2em;
+  color: rgb(14, 36, 63);
+}
+
+.control_check input {
+  display: block;
+  margin: auto;
+}
+
+.a_download {
+  margin: auto;
+  width: 60%;
+}
+
+.a_download:hover {
+  opacity: 0.8;
+}
+
+.submit {
+  width: 50%;
+}
+
+.reset {
+  margin-top: 20px;
+}
+
+.json_text {
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #form_loaded {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #form_loaded {
+    width: 60%;
+  }
+  .container-fluid {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #form_loaded {
+    width: 85%;
+  }
+
+  .container-fluid {
+    width: 80%;
+  }
+}
