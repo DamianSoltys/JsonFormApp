@@ -1,0 +1,125 @@
+{
+
+    "controls": [
+
+        {
+
+            "type": "TEXT",
+
+            "caption": "Kontrolka 1",
+
+            "key": "Ctrl1",
+
+            "defaultValue": "Value Ctrl1"
+
+        },
+
+        {
+
+            "type": "CHECKBOX",
+
+            "caption": "Kontrolka 2 - checkBox",
+
+            "key": "Ctrl2",
+
+            "defaultValue": "true"
+
+        },
+
+        {
+
+            "type": "CHECKBOX",
+
+            "caption": "Kontrolka 3 - checkBox",
+
+            "key": "Ctrl3",
+
+            "defaultValue": "false"
+
+        },
+
+        {
+
+            "type": "LIST",
+
+            "caption": "Kontrolka 4",
+
+            "key": "Ctrl4",
+
+            "defaultValue": "item5",
+
+            "items": [
+
+                {
+
+                    "caption": "Pozycja pierwsza",
+
+                    "value": "item1"
+
+                },
+				
+				{
+
+                    "caption": "Pozycja druga",
+
+                    "value": "item2"
+
+                },
+				
+				{
+
+                    "caption": "Pozycja trzecia",
+
+                    "value": "item3"
+
+                },
+
+                {
+
+                    "caption": "Pozycja czwarta",
+
+                    "value": "item4"
+
+                },
+
+                {
+
+                    "caption": "Pozycja piata",
+
+                    "value": "item5"
+
+                }
+
+            ]
+
+        },
+
+        {
+
+            "type": "TEXT",
+
+            "caption": "Kontrolka 5",
+
+            "key": "Ctrl5",
+
+            "defaultValue": "Value Ctrl5"
+
+        },
+		{
+
+            "type": "TEXT",
+
+            "caption": "Kontrolka 6",
+
+            "key": "Ctrl6",
+
+            "defaultValue": "Value Ctrl6"
+
+        },
+		
+		
+		
+
+    ]
+
+}
