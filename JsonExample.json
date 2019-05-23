@@ -10,7 +10,7 @@
 
             "key": "Ctrl1",
 
-            "defaultValue": "Wartosc Ctrl1"
+            "defaultValue": "Value Ctrl1"
 
         },
 
@@ -34,7 +34,7 @@
 
             "key": "Ctrl3",
 
-            "defaultValue": "Wartosc Ctrl3"
+            "defaultValue": "Value Ctrl3"
 
         },
 
@@ -86,7 +86,65 @@
 
             "key": "Ctrl5",
 
-            "defaultValue": "Wartosc Ctrl5"
+            "defaultValue": "Value Ctrl5"
+
+        },
+		
+		{
+
+            "type": "TEXT",
+
+            "caption": "Kontrolka 6",
+
+            "key": "Ctrl6",
+
+            "defaultValue": "Value Ctrl6"
+
+        },
+		{
+
+            "type": "LIST",
+
+            "caption": "Kontrolka 7",
+
+            "key": "Ctrl7",
+
+            "defaultValue": "item1",
+
+            "items": [
+
+                {
+
+                    "caption": "Pozycja pierwsza",
+
+                    "value": "item1"
+
+                },
+
+                {
+
+                    "caption": "Pozycja druga",
+
+                    "value": "item2"
+
+                },
+
+                {
+
+                    "caption": "Pozycja trzecia",
+
+                    "value": "item3"
+
+                },
+				{
+
+                    "caption": "Pozycja czwarta",
+
+                    "value": "item4"
+
+                }
+
+            ]
 
         }
 
