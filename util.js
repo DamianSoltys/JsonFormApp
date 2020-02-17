@@ -8,20 +8,33 @@ class Json {
         let http = new XMLHttpRequest();
 
         http.addEventListener('load', this.JsonLoaded);
-        http.addEventListener('error', this.JsonError);
+        http.addEventListener('error', this.JsonError.bind(this));
         http.open('GET', `${this.value}`);
         http.send();
     }
 
     JsonError() {
-        console.log("Something went wrong");
+        this.createErrorNode();
     }
 
     JsonLoaded() {
         let json_Form = JSON.parse(this.responseText);
         let controls = new Controls(json_Form.controls);
 
+        document.getElementById("button_sub").textContent = "Usuń formularz";
         controls.setControls();
+    }
+
+    createErrorNode() {
+        let errorInfo = document.createElement('p');
+
+        errorInfo.textContent = 'Something went wrong, try again!';
+        errorInfo.classList.add('form-error','text-danger');
+        document.querySelector('#form_url').appendChild(errorInfo);
+
+        setTimeout(() => {
+            errorInfo.remove();
+        },3000);
     }
 
 };
@@ -283,7 +296,6 @@ function ButtonHandler() {
                 form_loaded.id = "form_loaded";
                 document.querySelector("main").after(form_loaded);
                 clicked = true;
-                document.getElementById("button_sub").textContent = "Usuń formularz";
                 let json = new Json(valuefield.value, form_loaded);
                 json.loadJson();
             } else {
